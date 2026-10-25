@@ -1,0 +1,92 @@
+[
+{
+  "directory": "/Users/zvezdinvladimir/Projects/image_processor",
+  "command": "/usr/bin/c++  -I/Users/zvezdinvladimir/Projects/contrib/catch -I/Users/zvezdinvladimir/Projects/util  -Wall -Werror -Wimplicit-fallthrough -g -std=gnu++20 -arch arm64 -o CMakeFiles/contrib_catch_main.dir/contrib/catch/catch_main.cpp.o -c /Users/zvezdinvladimir/Projects/contrib/catch/catch_main.cpp",
+  "file": "/Users/zvezdinvladimir/Projects/contrib/catch/catch_main.cpp",
+  "output": "CMakeFiles/contrib_catch_main.dir/contrib/catch/catch_main.cpp.o"
+},
+{
+  "directory": "/Users/zvezdinvladimir/Projects/image_processor/tasks/multiplication",
+  "command": "/usr/bin/c++  -I/Users/zvezdinvladimir/Projects/util -I/Users/zvezdinvladimir/Projects/tasks/multiplication -I/Users/zvezdinvladimir/Projects/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -std=gnu++20 -arch arm64 -o CMakeFiles/test_multiplication.dir/test.cpp.o -c /Users/zvezdinvladimir/Projects/tasks/multiplication/test.cpp",
+  "file": "/Users/zvezdinvladimir/Projects/tasks/multiplication/test.cpp",
+  "output": "tasks/multiplication/CMakeFiles/test_multiplication.dir/test.cpp.o"
+},
+{
+  "directory": "/Users/zvezdinvladimir/Projects/image_processor/tasks/multiplication",
+  "command": "/usr/bin/c++  -I/Users/zvezdinvladimir/Projects/util -I/Users/zvezdinvladimir/Projects/tasks/multiplication -I/Users/zvezdinvladimir/Projects/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -std=gnu++20 -arch arm64 -o CMakeFiles/test_multiplication.dir/multiplication.cpp.o -c /Users/zvezdinvladimir/Projects/tasks/multiplication/multiplication.cpp",
+  "file": "/Users/zvezdinvladimir/Projects/tasks/multiplication/multiplication.cpp",
+  "output": "tasks/multiplication/CMakeFiles/test_multiplication.dir/multiplication.cpp.o"
+},
+{
+  "directory": "/Users/zvezdinvladimir/Projects/image_processor/tasks/palindrome",
+  "command": "/usr/bin/c++  -I/Users/zvezdinvladimir/Projects/util -I/Users/zvezdinvladimir/Projects/tasks/palindrome -I/Users/zvezdinvladimir/Projects/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -std=gnu++20 -arch arm64 -o CMakeFiles/test_palindrome.dir/palindrome.cpp.o -c /Users/zvezdinvladimir/Projects/tasks/palindrome/palindrome.cpp",
+  "file": "/Users/zvezdinvladimir/Projects/tasks/palindrome/palindrome.cpp",
+  "output": "tasks/palindrome/CMakeFiles/test_palindrome.dir/palindrome.cpp.o"
+},
+{
+  "directory": "/Users/zvezdinvladimir/Projects/image_processor/tasks/palindrome",
+  "command": "/usr/bin/c++  -I/Users/zvezdinvladimir/Projects/util -I/Users/zvezdinvladimir/Projects/tasks/palindrome -I/Users/zvezdinvladimir/Projects/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -std=gnu++20 -arch arm64 -o CMakeFiles/test_palindrome.dir/test.cpp.o -c /Users/zvezdinvladimir/Projects/tasks/palindrome/test.cpp",
+  "file": "/Users/zvezdinvladimir/Projects/tasks/palindrome/test.cpp",
+  "output": "tasks/palindrome/CMakeFiles/test_palindrome.dir/test.cpp.o"
+},
+{
+  "directory": "/Users/zvezdinvladimir/Projects/image_processor/tasks/password",
+  "command": "/usr/bin/c++  -I/Users/zvezdinvladimir/Projects/util -I/Users/zvezdinvladimir/Projects/tasks/password -I/Users/zvezdinvladimir/Projects/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -std=gnu++20 -arch arm64 -o CMakeFiles/test_password.dir/password.cpp.o -c /Users/zvezdinvladimir/Projects/tasks/password/password.cpp",
+  "file": "/Users/zvezdinvladimir/Projects/tasks/password/password.cpp",
+  "output": "tasks/password/CMakeFiles/test_password.dir/password.cpp.o"
+},
+{
+  "directory": "/Users/zvezdinvladimir/Projects/image_processor/tasks/password",
+  "command": "/usr/bin/c++  -I/Users/zvezdinvladimir/Projects/util -I/Users/zvezdinvladimir/Projects/tasks/password -I/Users/zvezdinvladimir/Projects/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -std=gnu++20 -arch arm64 -o CMakeFiles/test_password.dir/test.cpp.o -c /Users/zvezdinvladimir/Projects/tasks/password/test.cpp",
+  "file": "/Users/zvezdinvladimir/Projects/tasks/password/test.cpp",
+  "output": "tasks/password/CMakeFiles/test_password.dir/test.cpp.o"
+},
+{
+  "directory": "/Users/zvezdinvladimir/Projects/image_processor/tasks/varint",
+  "command": "/usr/bin/c++  -I/Users/zvezdinvladimir/Projects/util -I/Users/zvezdinvladimir/Projects/tasks/varint -I/Users/zvezdinvladimir/Projects/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -std=gnu++20 -arch arm64 -o CMakeFiles/test_varint.dir/test.cpp.o -c /Users/zvezdinvladimir/Projects/tasks/varint/test.cpp",
+  "file": "/Users/zvezdinvladimir/Projects/tasks/varint/test.cpp",
+  "output": "tasks/varint/CMakeFiles/test_varint.dir/test.cpp.o"
+},
+{
+  "directory": "/Users/zvezdinvladimir/Projects/image_processor/tasks/varint",
+  "command": "/usr/bin/c++  -I/Users/zvezdinvladimir/Projects/util -I/Users/zvezdinvladimir/Projects/tasks/varint -I/Users/zvezdinvladimir/Projects/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -std=gnu++20 -arch arm64 -o CMakeFiles/test_varint.dir/varint.cpp.o -c /Users/zvezdinvladimir/Projects/tasks/varint/varint.cpp",
+  "file": "/Users/zvezdinvladimir/Projects/tasks/varint/varint.cpp",
+  "output": "tasks/varint/CMakeFiles/test_varint.dir/varint.cpp.o"
+},
+{
+  "directory": "/Users/zvezdinvladimir/Projects/image_processor/tasks/bitops",
+  "command": "/usr/bin/c++  -I/Users/zvezdinvladimir/Projects/util -I/Users/zvezdinvladimir/Projects/tasks/bitops -I/Users/zvezdinvladimir/Projects/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -std=gnu++20 -arch arm64 -o CMakeFiles/test_bitops.dir/test.cpp.o -c /Users/zvezdinvladimir/Projects/tasks/bitops/test.cpp",
+  "file": "/Users/zvezdinvladimir/Projects/tasks/bitops/test.cpp",
+  "output": "tasks/bitops/CMakeFiles/test_bitops.dir/test.cpp.o"
+},
+{
+  "directory": "/Users/zvezdinvladimir/Projects/image_processor/tasks/bitops",
+  "command": "/usr/bin/c++  -I/Users/zvezdinvladimir/Projects/util -I/Users/zvezdinvladimir/Projects/tasks/bitops -I/Users/zvezdinvladimir/Projects/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -std=gnu++20 -arch arm64 -o CMakeFiles/test_bitops.dir/bitops.cpp.o -c /Users/zvezdinvladimir/Projects/tasks/bitops/bitops.cpp",
+  "file": "/Users/zvezdinvladimir/Projects/tasks/bitops/bitops.cpp",
+  "output": "tasks/bitops/CMakeFiles/test_bitops.dir/bitops.cpp.o"
+},
+{
+  "directory": "/Users/zvezdinvladimir/Projects/image_processor/tasks/safe_arithmetic",
+  "command": "/usr/bin/c++  -I/Users/zvezdinvladimir/Projects/util -I/Users/zvezdinvladimir/Projects/tasks/safe_arithmetic -I/Users/zvezdinvladimir/Projects/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -std=gnu++20 -arch arm64 -o CMakeFiles/test_safe_arithmetic.dir/test.cpp.o -c /Users/zvezdinvladimir/Projects/tasks/safe_arithmetic/test.cpp",
+  "file": "/Users/zvezdinvladimir/Projects/tasks/safe_arithmetic/test.cpp",
+  "output": "tasks/safe_arithmetic/CMakeFiles/test_safe_arithmetic.dir/test.cpp.o"
+},
+{
+  "directory": "/Users/zvezdinvladimir/Projects/image_processor/tasks/safe_arithmetic",
+  "command": "/usr/bin/c++  -I/Users/zvezdinvladimir/Projects/util -I/Users/zvezdinvladimir/Projects/tasks/safe_arithmetic -I/Users/zvezdinvladimir/Projects/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -std=gnu++20 -arch arm64 -o CMakeFiles/test_safe_arithmetic.dir/safe_arithmetic.cpp.o -c /Users/zvezdinvladimir/Projects/tasks/safe_arithmetic/safe_arithmetic.cpp",
+  "file": "/Users/zvezdinvladimir/Projects/tasks/safe_arithmetic/safe_arithmetic.cpp",
+  "output": "tasks/safe_arithmetic/CMakeFiles/test_safe_arithmetic.dir/safe_arithmetic.cpp.o"
+},
+{
+  "directory": "/Users/zvezdinvladimir/Projects/image_processor/tasks/fp16",
+  "command": "/usr/bin/c++  -I/Users/zvezdinvladimir/Projects/util -I/Users/zvezdinvladimir/Projects/tasks/fp16 -I/Users/zvezdinvladimir/Projects/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -std=gnu++20 -arch arm64 -o CMakeFiles/test_fp16.dir/test.cpp.o -c /Users/zvezdinvladimir/Projects/tasks/fp16/test.cpp",
+  "file": "/Users/zvezdinvladimir/Projects/tasks/fp16/test.cpp",
+  "output": "tasks/fp16/CMakeFiles/test_fp16.dir/test.cpp.o"
+},
+{
+  "directory": "/Users/zvezdinvladimir/Projects/image_processor/tasks/fp16",
+  "command": "/usr/bin/c++  -I/Users/zvezdinvladimir/Projects/util -I/Users/zvezdinvladimir/Projects/tasks/fp16 -I/Users/zvezdinvladimir/Projects/contrib/catch  -Wall -Werror -Wimplicit-fallthrough -g -std=gnu++20 -arch arm64 -o CMakeFiles/test_fp16.dir/fp16.cpp.o -c /Users/zvezdinvladimir/Projects/tasks/fp16/fp16.cpp",
+  "file": "/Users/zvezdinvladimir/Projects/tasks/fp16/fp16.cpp",
+  "output": "tasks/fp16/CMakeFiles/test_fp16.dir/fp16.cpp.o"
+}
+]
