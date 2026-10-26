@@ -1,0 +1,12 @@
+.DS_Store
+.clang-format
+
+/build/
+/CMakeFiles/
+/CMakeCache.txt
+/Makefile
+/cmake_install.cmake
+/compile_commands.json
+/Testing/
+
+/tests/output/
