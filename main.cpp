@@ -12,13 +12,14 @@
 #include <cctype>
 #include <charconv>
 #include <cmath>
+#include <cstddef>
 #include <exception>
 #include <iostream>
 #include <stdexcept>
 #include <string>
 
-size_t parse_size_t(const std::string &s) {
-    size_t value = 0;
+std::size_t parse_size_t(const std::string &s) {
+    std::size_t value = 0;
     auto result = std::from_chars(s.data(), s.data() + s.size(), value);
     if (result.ec != std::errc{} || result.ptr != s.data() + s.size() || value == 0) {
         throw std::invalid_argument("Expected a positive integer size");
@@ -30,7 +31,7 @@ double parse_double(const std::string &s) {
         std::isspace(static_cast<unsigned char>(s.front()))) {
         throw std::invalid_argument("Invalid argument");
     }
-    size_t used;
+    std::size_t used;
     double x = std::stod(s, &used);
     if (used < s.size() || !std::isfinite(x)) {
         throw std::invalid_argument("Invalid argument");

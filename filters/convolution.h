@@ -1,5 +1,6 @@
 #pragma once
 #include "filter.h"
+#include <cstddef>
 #include <vector>
 
 struct Convolution : public Filter {

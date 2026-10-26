@@ -1,5 +1,6 @@
 #include "grayscale.h"
 #include <cmath>
+#include <cstddef>
 #include <stdexcept>
 
 Grayscale::Grayscale(double kr, double kg, double kb) {
@@ -15,8 +16,8 @@ Grayscale::Grayscale(double kr, double kg, double kb) {
     kb_ = kb / s;
 }
 void Grayscale::apply(Image &image) const {
-    for (size_t i = 0; i < image.get_width(); ++i) {
-        for (size_t j = 0; j < image.get_height(); ++j) {
+    for (std::size_t i = 0; i < image.get_width(); ++i) {
+        for (std::size_t j = 0; j < image.get_height(); ++j) {
             double gray = kr_ * image.at(i, j).get_red() + kg_ * image.at(i, j).get_green() +
                           kb_ * image.at(i, j).get_blue();
             image.at(i, j) = Color(gray, gray, gray);

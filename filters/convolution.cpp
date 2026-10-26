@@ -1,14 +1,16 @@
 #include "convolution.h"
 #include <algorithm>
 #include <cmath>
+#include <cstddef>
 #include <limits>
 #include <stdexcept>
 
-Convolution::Convolution(size_t width, size_t height) {
+Convolution::Convolution(std::size_t width, std::size_t height) {
     if (width == 0 || height == 0) {
         throw std::invalid_argument("Kernel dimensions must be positive");
     }
-    if (width > std::numeric_limits<size_t>::max() / 2 || height > std::numeric_limits<size_t>::max() / 2) {
+    if (width > std::numeric_limits<std::size_t>::max() / 2 ||
+        height > std::numeric_limits<std::size_t>::max() / 2) {
         throw std::length_error("Kernel dimensions are too large");
     }
     width_ = width;
@@ -20,11 +22,11 @@ Convolution::Convolution(std::vector<std::vector<double>> kernel) {
     if (kernel.size() % 2 == 0 || kernel[0].size() % 2 == 0) {
         throw std::invalid_argument("Both kernel dimensions should be odd");
     }
-    for (size_t i = 0; i < kernel.size(); ++i) {
+    for (std::size_t i = 0; i < kernel.size(); ++i) {
         if (kernel[0].size() != kernel[i].size()) {
             throw std::invalid_argument("Kernel must be rectangle");
         }
-        for (size_t j = 0; j < kernel[i].size(); ++j) {
+        for (std::size_t j = 0; j < kernel[i].size(); ++j) {
             if (!std::isfinite(kernel[i][j])) {
                 throw std::invalid_argument("Kernel coefficients must be finite");
             }
@@ -35,15 +37,15 @@ Convolution::Convolution(std::vector<std::vector<double>> kernel) {
     height_ = (kernel_.size() + 1) / 2;
 }
 void Convolution::apply(Image &image) const {
-    size_t width = image.get_width();
-    size_t height = image.get_height();
+    std::size_t width = image.get_width();
+    std::size_t height = image.get_height();
     Image new_image(width, height);
-    for (size_t i = 0; i < width; ++i) {
-        for (size_t j = 0; j < height; ++j) {
-            for (size_t di = 0; di < 2 * width_ - 1; ++di) {
-                for (size_t dj = 0; dj < 2 * height_ - 1; ++dj) {
-                    size_t ni = i + di;
-                    size_t nj = j + dj;
+    for (std::size_t i = 0; i < width; ++i) {
+        for (std::size_t j = 0; j < height; ++j) {
+            for (std::size_t di = 0; di < 2 * width_ - 1; ++di) {
+                for (std::size_t dj = 0; dj < 2 * height_ - 1; ++dj) {
+                    std::size_t ni = i + di;
+                    std::size_t nj = j + dj;
                     ni = ni >= width_ - 1 ? ni - (width_ - 1) : 0;
                     nj = nj >= height_ - 1 ? nj - (height_ - 1) : 0;
                     ni = std::min(ni, width - 1);

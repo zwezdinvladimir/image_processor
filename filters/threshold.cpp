@@ -1,5 +1,6 @@
 #include "threshold.h"
 #include <cmath>
+#include <cstddef>
 #include <stdexcept>
 
 namespace {
@@ -25,8 +26,8 @@ Threshold::Threshold(double threshold_r, double threshold_g, double threshold_b)
     threshold_b_ = threshold_b;
 }
 void Threshold::apply(Image &image) const {
-    for (size_t i = 0; i < image.get_width(); ++i) {
-        for (size_t j = 0; j < image.get_height(); ++j) {
+    for (std::size_t i = 0; i < image.get_width(); ++i) {
+        for (std::size_t j = 0; j < image.get_height(); ++j) {
             auto c = image.at(i, j);
             image.at(i, j).set_red(c.get_red() > threshold_r_ ? 1 : 0);
             image.at(i, j).set_green(c.get_green() > threshold_g_ ? 1 : 0);
